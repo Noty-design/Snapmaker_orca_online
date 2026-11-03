@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=FOrcaSlicer (Experimental U1)
+Exec=/usr/local/bin/orca-web-launch-app forca %F
+Icon=/opt/forcaslicer-v2.3.2-fos.8.6.8/FOrcaSlicer.png
+Terminal=false
+Categories=Graphics;3DGraphics;Engineering;
+StartupNotify=true

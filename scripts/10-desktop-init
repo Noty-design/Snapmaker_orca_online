@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+config=/config/.config/openbox
+autostart="$config/autostart"
+mkdir -p "$config" /config/.local/share/applications /config/Desktop
+if [ ! -f "$autostart" ]; then
+ if [ -r /defaults/autostart ]; then cp /defaults/autostart "$autostart"; else printf '%s\n' '/opt/orcaslicer/AppRun' > "$autostart"; fi
+fi
+if ! grep -Fq selkies-desktop "$autostart"; then
+ temp="$(mktemp)"
+ printf '%s\n' 'if command -v selkies-desktop >/dev/null 2>&1; then' '  /usr/bin/selkies-desktop >/dev/null 2>&1 &' 'fi' > "$temp"
+ cat "$autostart" >> "$temp"
+ cat "$temp" > "$autostart"
+ rm "$temp"
+fi
+for file in snapmaker-orca.desktop orcaslicer-original.desktop forcaslicer.desktop openscad-nightly.desktop; do
+ if [ ! -e "/config/.local/share/applications/$file" ]; then cp "/usr/share/applications/$file" "/config/.local/share/applications/$file"; fi
+done
+mkdir -p /config/.local/share/slicer-homes
+chown "${PUID:-1000}:${PGID:-1000}" /config/.local/share /config/.local/share/slicer-homes
+chown "${PUID:-1000}:${PGID:-1000}" "$autostart" /config/.local/share/applications/*.desktop /config/Desktop || true

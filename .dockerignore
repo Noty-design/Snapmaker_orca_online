@@ -1,0 +1,11 @@
+.git
+.env
+config
+data
+*.pem
+*.key
+*.AppImage
+*.gcode
+*.3mf
+*.stl
+*.zip

@@ -1,0 +1,20 @@
+#!/bin/sh
+set -eu
+app="$1"
+shift
+case "$app" in
+ original) executable=/opt/orcaslicer-original-v2.4.2/AppRun ;;
+ forca) executable=/opt/forcaslicer-v2.3.2-fos.8.6.8/AppRun ;;
+ openscad) export OPENSCADPATH=/opt/openscad-libraries; exec /opt/openscad-nightly-2026.11.01/AppRun "$@" ;;
+ *) echo "Unknown application" >&2; exit 2 ;;
+esac
+home="/config/.local/share/slicer-homes/$app"
+mkdir -p "$home/.config" "$home/.local/share" "$home/.cache" /config/Desktop
+if [ ! -e "$home/Desktop" ]; then ln -s /config/Desktop "$home/Desktop"; fi
+export HOME="$home"
+export XDG_CONFIG_HOME="$home/.config"
+export XDG_DATA_HOME="$home/.local/share"
+export XDG_CACHE_HOME="$home/.cache"
+export GDK_BACKEND=x11
+cd "$home"
+exec "$executable" "$@"

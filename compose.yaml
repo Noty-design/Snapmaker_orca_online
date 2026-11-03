@@ -1,0 +1,29 @@
+# A trusted-user container, NOT an anonymous public demo.
+services:
+  slicer:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: snapmaker-orca-web:2.4.1-multi
+    container_name: snapmaker-orca-web
+    environment:
+      PUID: "${PUID:-1000}"
+      PGID: "${PGID:-1000}"
+      TZ: "${TZ:-Etc/UTC}"
+      GDK_BACKEND: x11
+      PIXELFLUX_WAYLAND: "false"
+      NO_GAMEPAD: "true"
+      SELKIES_FILE_TRANSFERS: upload,download
+      SELKIES_UI_SIDEBAR_SHOW_FILES: "true"
+      FILE_MANAGER_PATH: /config/Desktop
+    ports:
+      - "${HOST_BIND:-127.0.0.1}:${HTTPS_PORT:-3301}:3001"
+      - "127.0.0.1:${HTTP_ORIGIN_PORT:-3300}:3000"
+    shm_size: "2gb"
+    volumes:
+      - slicer_config:/config
+      - ./src/mobile-index.html:/usr/share/selkies/web/index.html:ro
+      - ./src/mobile.js:/usr/share/selkies/web/snapmaker-mobile.js:ro
+    restart: unless-stopped
+volumes:
+  slicer_config:

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Snapmaker Orca 2.4.1
+Exec=/opt/orcaslicer/AppRun
+Icon=/opt/orcaslicer/Snapmaker_Orca.png
+Terminal=false
+Categories=Graphics;3DGraphics;Engineering;
+StartupNotify=true

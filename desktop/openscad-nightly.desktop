@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=OpenSCAD Nightly 2026.11.01
+Exec=/usr/local/bin/orca-web-launch-app openscad %F
+Icon=openscad
+Terminal=false
+Categories=Graphics;3DGraphics;Engineering;
+StartupNotify=true

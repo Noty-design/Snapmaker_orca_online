@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=OrcaSlicer (Original) 2.4.2
+Exec=/usr/local/bin/orca-web-launch-app original %F
+Icon=/opt/orcaslicer-original-v2.4.2/OrcaSlicer.png
+Terminal=false
+Categories=Graphics;3DGraphics;Engineering;
+StartupNotify=true
