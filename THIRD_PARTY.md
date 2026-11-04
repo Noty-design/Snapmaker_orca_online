@@ -1,5 +1,7 @@
 # Third-party license and source notices
 
+Original integration code and project documentation are licensed under [PolyForm Noncommercial 1.0.0](LICENSE). Upstream components keep their own licenses.
+
 This repository only stores integration and mobile UI code. The build
 downloads upstream release binaries and verifies their checksums.
 

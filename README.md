@@ -65,4 +65,4 @@ If you want to controle the 3D printer then it's recommended that it is run thro
 
 ## License
 
-Unofficial community project, not affiliated with the application developers. The integration code is MIT-licensed; the included programs retain their own licenses. See [THIRD_PARTY.md](THIRD_PARTY.md).
+Unofficial community project, not affiliated with the application developers. Original project code and documentation are licensed under [PolyForm Noncommercial 1.0.0](LICENSE) for noncommercial use; third-party programs keep their own licenses. See [THIRD_PARTY.md](THIRD_PARTY.md).
