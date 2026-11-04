@@ -4,7 +4,7 @@ Run Snapmaker Orca, OrcaSlicer, FOrcaSlicer and OpenSCAD from a browser. The app
 
 ![Snapmaker Orca running in a browser](assets/slicer-desktop.webp)
 
-### On a phone
+### Optimized to be used on a desktop as on a phone. The menuew can be moved or "minimized" when needed. 
 
 [![Snapmaker Orca on a phone](assets/mobile-workflow.gif)](assets/mobile-session.mp4)
 
@@ -39,7 +39,7 @@ Run Snapmaker Orca, OrcaSlicer, FOrcaSlicer and OpenSCAD from a browser. The app
 
 ## Install
 
-Requires x86_64 Linux with Podman or Docker Compose. The first build downloads the applications and needs several gigabytes of disk space.
+Works with Podman or Docker Compose. The first build downloads the applications and needs several gigabytes of disk space.
 
 **Podman**
 
@@ -61,7 +61,7 @@ Configuration options are in [`.env.example`](.env.example). Profiles and settin
 
 ## Security
 
-This is a **single-user desktop**, not a public multi-user service. Ports bind to localhost by default. Do not expose the container to anonymous users. See [SECURITY.md](SECURITY.md) and [public demo requirements](docs/public-demo.md).
+If you want to controle the 3D printer then it's recommended that it is run through a tunnel like cloudflare tunnel or tailscale ocr thrugh VPN. 
 
 ## License
 
