@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="460" viewBox="0 0 1440 460" role="img" aria-labelledby="hero-title hero-desc">
+<title id="hero-title">Orca, online.</title>
+<desc id="hero-desc">An unofficial, self-hosted slicer workspace. Four desktop tools in a browser window.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#081615"/>
+    <stop offset=".55" stop-color="#102827"/>
+    <stop offset="1" stop-color="#0A181A"/>
+  </linearGradient>
+  <radialGradient id="halo" cx=".5" cy=".5" r=".6">
+    <stop stop-color="#45E3B5" stop-opacity=".36"/>
+    <stop offset="1" stop-color="#45E3B5" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#1D3336"/>
+    <stop offset="1" stop-color="#102223"/>
+  </linearGradient>
+  <linearGradient id="model" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#91FFE0"/>
+    <stop offset=".6" stop-color="#49D3AB"/>
+    <stop offset="1" stop-color="#248C80"/>
+  </linearGradient>
+  <pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse">
+    <path d="M 35 0 L 0 0 0 35" fill="none" stroke="#B8DACC" stroke-opacity=".055" stroke-width="1"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feGaussianBlur stdDeviation="16"/>
+  </filter>
+  <clipPath id="clip-screen"><rect x="814" y="90" width="545" height="322" rx="18"/></clipPath>
+</defs>
+<rect width="1440" height="460" rx="22" fill="url(#bg)"/>
+<rect width="1440" height="460" rx="22" fill="url(#grid)"/>
+<ellipse cx="1130" cy="190" rx="480" ry="320" fill="url(#halo)"/>
+<path d="M -30 390 C 185 316 297 492 517 419 S 871 390 1081 447" fill="none" stroke="#69DAB8" stroke-opacity=".1" stroke-width="2"/>
+<path d="M 530 0 L 860 460 M 680 0 L 995 460" stroke="#C4FCEA" stroke-opacity=".035" stroke-width="1"/>
+<g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+  <rect x="71" y="62" width="239" height="39" rx="19.5" fill="#173832" stroke="#3BB99D" stroke-opacity=".55"/>
+  <circle cx="93" cy="82" r="4.5" fill="#70F4CD"/>
+  <text x="108" y="88" font-size="14" letter-spacing="2.1" font-weight="700" fill="#C8FCEB">NOTY / MAKER LAB</text>
+  <text x="70" y="224" font-size="99" letter-spacing="-5.2" font-weight="750" fill="#F3F9F6">Orca,</text>
+  <text x="70" y="319" font-size="99" letter-spacing="-5.2" font-weight="750" fill="#63DEB7">online.</text>
+  <text x="76" y="375" font-size="23" fill="#C6D9D4">Desktop slicing. Wherever there's a browser.</text>
+  <text x="76" y="408" font-size="14" letter-spacing="2.5" font-weight="600" fill="#7EAD9F">SELF-HOSTED  /  TOUCH-FRIENDLY  /  OPEN SOURCE</text>
+</g>
+<rect x="815" y="108" width="546" height="328" rx="22" fill="#00100D" opacity=".65" filter="url(#shadow)"/>
+<rect x="807" y="82" width="557" height="338" rx="22" fill="#0A1618" stroke="#92E9CB" stroke-opacity=".4" stroke-width="1.5"/>
+<rect x="814" y="90" width="545" height="322" rx="18" fill="url(#screen)"/>
+<g clip-path="url(#clip-screen)">
+  <rect x="814" y="90" width="545" height="40" fill="#0D2224"/>
+  <circle cx="840" cy="110" r="5" fill="#E78279"/>
+  <circle cx="857" cy="110" r="5" fill="#E6BA71"/>
+  <circle cx="874" cy="110" r="5" fill="#6DDAB7"/>
+  <text x="895" y="115" font-family="Arial, sans-serif" font-size="12" fill="#B2D5CB" letter-spacing=".4">Orca Online</text>
+  <rect x="816" y="131" width="125" height="280" fill="#12272A"/>
+  <rect x="832" y="150" width="93" height="11" rx="5.5" fill="#2C5252"/>
+  <rect x="832" y="176" width="72" height="9" rx="4.5" fill="#4E907F"/>
+  <rect x="832" y="205" width="92" height="54" rx="7" fill="#1B3938" stroke="#2A5752"/>
+  <rect x="841" y="216" width="48" height="5" rx="2.5" fill="#60988A"/>
+  <rect x="841" y="231" width="73" height="6" rx="3" fill="#8BCDB7" opacity=".7"/>
+  <rect x="841" y="245" width="60" height="5" rx="2.5" fill="#60988A"/>
+  <rect x="832" y="277" width="88" height="8" rx="4" fill="#2F5B53"/>
+  <rect x="832" y="297" width="62" height="8" rx="4" fill="#2F5B53"/>
+  <rect x="832" y="332" width="93" height="25" rx="7" fill="#1C665A"/>
+  <text x="847" y="349" font-family="Arial, sans-serif" font-size="12" fill="#D3FFEE">PREPARE</text>
+  <rect x="950" y="144" width="398" height="254" fill="#183034"/>
+  <path d="M 1001 312 L 1140 213 L 1303 292 L 1163 390 Z" fill="#274346" stroke="#83BFAB" stroke-width="2"/>
+  <path d="M 1019 300 L 1177 383 M 1038 287 L 1195 372 M 1057 273 L 1214 360 M 1076 260 L 1233 349 M 1095 247 L 1252 336 M 1114 235 L 1271 324" fill="none" stroke="#B7E9D4" stroke-opacity=".22"/>
+  <path d="M 1023 327 L 1163 227 M 1047 339 L 1187 239 M 1071 351 L 1211 251 M 1095 363 L 1235 263 M 1119 375 L 1259 275" fill="none" stroke="#B7E9D4" stroke-opacity=".22"/>
+  <ellipse cx="1154" cy="295" rx="70" ry="42" fill="#061818" opacity=".48"/>
+  <path d="M 1085 288 L 1143 248 L 1215 283 L 1156 324 Z" fill="#246459"/>
+  <path d="M 1085 275 L 1143 233 L 1215 270 L 1156 310 Z" fill="url(#model)" stroke="#A5FFE3" stroke-width="1.5"/>
+  <path d="M 1085 275 L 1085 288 L 1156 324 L 1156 310 Z" fill="#278E78"/>
+  <path d="M 1215 270 L 1215 283 L 1156 324 L 1156 310 Z" fill="#2D7F71"/>
+  <path d="M 1110 274 L 1148 248 L 1191 271 L 1152 297 Z" fill="#184740" stroke="#AAFFE2" stroke-width="1.4"/>
+  <path d="M 1125 275 L 1150 258 L 1177 273 L 1151 289 Z" fill="#2F786A"/>
+  <path d="M 990 174 L 1001 174 M 990 179 L 1001 179 M 990 184 L 1001 184" stroke="#7CACA3" stroke-linecap="round"/>
+  <rect x="1220" y="166" width="111" height="29" rx="14" fill="#2B9F84"/>
+  <text x="1242" y="184" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="bold">SLICE PLATE</text>
+  <path d="M 814 384 L 1359 384" stroke="#6C9E95" stroke-opacity=".25"/>
+</g>
+<rect x="1196" y="383" width="170" height="44" rx="22" fill="#F1F8F4" stroke="#B5E2D3" stroke-width="1"/>
+<circle cx="1220" cy="405" r="9" fill="#2BB08C"/>
+<path d="M 1216 405 L 1219 408 L 1225 401" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1238" y="410" font-family="Arial, sans-serif" font-size="14" fill="#174B3F" font-weight="bold">BROWSER READY</text>
+</svg>

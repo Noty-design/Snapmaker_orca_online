@@ -8,3 +8,6 @@ data/
 *.3mf
 *.stl
 *.zip
+
+# Raw phone/browser recordings stay local; README assets are trimmed copies.
+assets/Screen_Recording_*.mp4
