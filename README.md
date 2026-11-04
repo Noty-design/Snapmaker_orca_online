@@ -4,7 +4,7 @@ Run Snapmaker Orca, OrcaSlicer, FOrcaSlicer and OpenSCAD from a browser. The app
 
 ![Snapmaker Orca running in a browser](assets/slicer-desktop.webp)
 
-### Optimized to be used on a desktop as on a phone. The menuew can be moved or "minimized" when needed. 
+### Works on desktop and mobile. The toolbar can be moved or minimized as needed.
 
 [![Snapmaker Orca on a phone](assets/mobile-workflow.gif)](assets/mobile-session.mp4)
 
@@ -61,7 +61,7 @@ Configuration options are in [`.env.example`](.env.example). Profiles and settin
 
 ## Security
 
-If you want to controle the 3D printer then it's recommended that it is run through a tunnel like cloudflare tunnel or tailscale ocr thrugh VPN. 
+For remote printer access, use an authenticated connection such as Cloudflare Tunnel with access controls, Tailscale or a VPN. Do not expose the desktop directly to the public internet.
 
 ## License
 
